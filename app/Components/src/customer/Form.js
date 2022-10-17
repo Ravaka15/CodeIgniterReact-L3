@@ -17,10 +17,10 @@ export default class Form extends Component {
   render() {
     return (
       <div>
-        <h4>Insertion client</h4>
+        <h4>INSERTION CLIENT</h4>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label for="nomClient">Nom client {this.state.fieldNomClient}</label>
+            <label for="nomClient">Nom client</label>
             <input type="text" class="form-control" placeholder="Nom" 
               value={this.state.fieldNomClient}
               onChange={(value)=>this.setState({fieldNomClient:value.target.value})} />
@@ -29,7 +29,7 @@ export default class Form extends Component {
 
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label for="prenomClient">Prenom client {this.state.fieldPrenomClient}</label>
+            <label for="prenomClient">Prenom client</label>
             <input type="text" class="form-control" placeholder="Prenom" 
               value={this.state.fieldPrenomClient}
               onChange={(value)=>this.setState({fieldPrenomClient:value.target.value})} />
@@ -38,7 +38,7 @@ export default class Form extends Component {
 
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label for="telephoneClient">Telephone client {this.state.fieldTelephoneClient}</label>
+            <label for="telephoneClient">Telephone client</label>
             <input type="text" class="form-control" placeholder="Telephone" 
               value={this.state.fieldTelephoneClient}
               onChange={(value)=>this.setState({fieldTelephoneClient:value.target.value})} />
