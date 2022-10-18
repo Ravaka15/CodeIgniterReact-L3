@@ -21,7 +21,7 @@ export default class Main extends Component {
           <Switch>
             <Route path="/customer/index" exact component={List} />
             <Route path="/customer/form"  component={Form} />
-            <Route path="/customer/edit/:id" component={Edit} />
+            <Route path="/customer/edit/:idClient" component={Edit} />
           </Switch>
         </main>
       </Router>

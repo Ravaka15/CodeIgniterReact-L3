@@ -41,6 +41,26 @@ class CustomerController extends Controller
         }
     }
 
+    public function get($idClient)
+    {
+        try {
+            $data = $this->client->find($idClient);
+            if ($data) {
+                $response['data'] = $data;
+                $response['success'] = true;
+                $response['message'] = "Successful load";
+            }
+            else {
+                $response['success'] = false;
+                $response['message'] = "Not found data";
+            }
+            return json_encode($response);
+        } catch (\Exception $e) {
+            $response['success'] = false;
+            $response['message'] = $e->getMessage();
+            return json_encode($response);
+        }
+    }
 
     public function create()
     {
