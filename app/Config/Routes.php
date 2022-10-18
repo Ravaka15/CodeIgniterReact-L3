@@ -35,7 +35,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/customer', 'CustomerController::index');
 $routes->get('/api/customer/test','CustomerController::test');
 $routes->post('/api/customer/create','CustomerController::create');
-
+$routes->get('api/customer/list','CustomerController::list');
 /////////////////////////////
 $routes->get('/customer', 'CustomerController::index');
 $routes->get('/customer/index', 'CustomerController::index');

@@ -26,6 +26,22 @@ class CustomerController extends Controller
         return json_encode($data);
     }
 
+    public function list()
+    {
+        try {
+            $data = $this->client->findAll();
+            $response['data'] = $data;
+            $response['success'] = true;
+            $response['message'] = "Successful load";
+            return json_encode($response);
+        } catch (\Exception $e) {
+            $response['success'] = false;
+            $response['message'] = $e->getMessage();
+            return json_encode($response);
+        }
+    }
+
+
     public function create()
     {
         try {
