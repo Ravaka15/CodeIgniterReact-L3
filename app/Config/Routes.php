@@ -37,6 +37,7 @@ $routes->get('/api/customer/test','CustomerController::test');
 $routes->post('/api/customer/create','CustomerController::create');
 $routes->get('api/customer/list','CustomerController::list');
 $routes->get('api/customer/get/(:num)', 'CustomerController::get/$1');
+$routes->put('api/customer/update/(:num)', 'CustomerController::update/$1');
 
 /////////////////////////////
 $routes->get('/customer', 'CustomerController::index');
