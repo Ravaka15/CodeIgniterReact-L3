@@ -7,17 +7,9 @@
 	<style> .navbar{margin-bottom: 20px;} </style>
 </head>
 <body>
-<div class="container" style="padding:20px; ">
-	<h1 style="text-align:Left;">
-		<a href="/customer" style="text-decoration:none;">
-			Lazan'i Betsileo
-		</a>
-	</h1>
-	<hr>
   <!-- components react -->
   <div id="main-customer">
   </div>
-</div>
 <script src="/dist/main.js" charset="utf-8"></script>
 </body>
-</html>    
+</html>
