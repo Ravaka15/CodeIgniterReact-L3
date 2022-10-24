@@ -20,11 +20,13 @@ class CustomerController extends Controller
         return view('customer');
     }
 
+    
     public function test()
     {
         $data = $this->client->findAll();
         return json_encode($data);
     }
+
 
     public function list()
     {

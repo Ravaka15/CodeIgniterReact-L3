@@ -7,9 +7,12 @@
 	<style> .navbar{margin-bottom: 20px;} </style>
 </head>
 <body>
+
+
   <!-- components react -->
   <div id="main-customer">
   </div>
+  
 <script src="/dist/main.js" charset="utf-8"></script>
 </body>
 </html>

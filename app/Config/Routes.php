@@ -34,16 +34,14 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/customer', 'CustomerController::index');
 $routes->get('/api/customer/test','CustomerController::test');
+$routes->get('api/customer/index','CustomerController::home');
 $routes->post('/api/customer/create','CustomerController::create');
 $routes->get('api/customer/list','CustomerController::list');
 $routes->get('api/customer/get/(:num)', 'CustomerController::get/$1');
 $routes->put('api/customer/update/(:num)', 'CustomerController::update/$1');
 
 /////////////////////////////
-$routes->get('/customer', 'CustomerController::index');
-$routes->get('/customer/index', 'CustomerController::index');
-$routes->get('/customer/form', 'CustomerController::index');
-$routes->get('/customer/edit/(:num)', 'CustomerController::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

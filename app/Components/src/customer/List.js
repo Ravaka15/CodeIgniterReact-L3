@@ -7,7 +7,7 @@ export default class List extends Component {
   {
     super()
     this.state = {
-      listCustomer:[]
+    listCustomer:[]
     }
   }
 

@@ -1,20 +1,20 @@
 import React, { Component } from 'react'; 
 import { Link } from "react-router-dom";
 import styles from "./Nav.css";
+import images from "./img/images.png";
 
 export default class Nav extends Component {
   render() {
     return (
       <nav class="navbar navbar-expand-lg">
-         <img
-              src="/image.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
+          <img
+              src={images}
+              width="50"
+              height="50"
+              alt="images"
             />
           <Link 
-          to="/customer" class="navbar-nav mr-auto" 
+          to="/" class="navbar-nav mr-auto" 
           style={{textDecoration: 'none', 
           color: 'rgb(150, 41, 108)',fontWeight: 'bold',fontSize: 25}}>
           Lazan'i Betsileo
@@ -22,7 +22,7 @@ export default class Nav extends Component {
         <div className='menus'>
           <ul class="navbar-nav ml-auto" >
             <li className={styles.menu}>
-              <Link class="nav-link" to="/customer" style={{color: 'black',fontWeight: 'bold'}}>Home</Link>
+              <Link class="nav-link" to="/" style={{color: 'black',fontWeight: 'bold'}}>Home</Link>
             </li>
             <li  className={styles.menu}>
               <Link class="nav-link" to="/customer/index" style={{color: 'black',fontWeight: 'bold',}}>Produit</Link>
