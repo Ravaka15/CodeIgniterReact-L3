@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import { Link } from "react-router-dom";
-import styles from "./Nav.css";
+import styles from "./css/Nav.css";
 import images from "./img/images.png";
 
 export default class Nav extends Component {
